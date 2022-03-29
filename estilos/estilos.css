@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0,5%;
+    padding: 0,5%;
+}
+
+.titulo_principal{
+    color: #202020;
+    font-size: 400%;
+    text-align: center; 
+    
+}
+
+.foto_anillo{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 5%;
+    max-width: 15%;
+    max-height: 15%;
+    
+}
+
+
+.foto_anillo2{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 6%;
+    max-width: 6%;
+    max-height: 6%;
+}
+.parrafo_eslogan{
+    color:#202020;
+    text-align: center;
+    font-size: 200%;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 3px;
+    margin-inline-end: 3px;
+    justify-content: space-around;
+}
+
+
+
+#italic{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #e4e4e4;
+}
+
+main{
+    background-color: #e4e4e4;
+}
+
+.imgbox{
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding: 1%;
+    border: 2px;
+    border-radius: 50%;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+
+
+.parrafo_nosotros{
+    color:#000000;
+    text-align: left;
+    
+}
+
+.contactos_sociales{
+    color:#000000;
+    text-align: center;
+}
+
+.foto_anillo3{
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 400px;
+    padding: 20px;
+    max-width: 50%;
+    max-height: 0%;
+    
+}
+
+
+.grid__main{
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.fotos__4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotos__6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.imgbox{
+    display: flex;
+    align-items: center;
+
+}
+
+.titulo_principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__navegador {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 3px;
+    margin-inline-end: 3px;
+}
+
+.flex__navegador ul{
+    display: flex;
+    justify-content: center;
+}
+
+.flex__navegador li{
+    display: inline-block;
+    color: rgb(163, 28, 28);
+    padding: 15px;
+}
+
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.6fr 0.1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"        
+    ;
+}
+
+.header__grid{
+    grid-area: header;
+}
+
+.grid__main{
+    grid-area: main;
+}
+
+.footer__grid{
+    grid-area: footer;
+}
+
+
+.grid__main{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-areas: 
+    "fotos4 fotos4 fotos4"
+    "eslogan eslogan eslogan"
+    "fotos6 fotos6 fotos6"
+    ;
+
+}
+
+.fotos__4{
+    grid-area: fotos4;
+}
+
+.parrafo_eslogan{
+    grid-area: eslogan;
+}
+
+.fotos__6{
+    grid-area: fotos6;
+
+}
+
+.pulseras__main{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 3fr 3fr;
+    grid-template-areas: 
+    "pulseras pulseras pulseras pulseras"
+    "lista lista lista lista"
+    "spotify spotify spotify spotify"
+    "fotos fotos fotos fotos"
+    ;
+
+}
+
+.subtitulo_pulseras{
+    grid-area: pulseras;
+}
+
+.lista__navegador{
+    grid-area: lista;
+}
+
+.foto_anillo{
+    grid-area: spotify;
+
+}
+
+.fotos__nav{
+    grid-area: fotos;
+}
+
+.subtitulo_pulseras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto_anillo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+
+@media screen and (max-width: 760px) {
+    .header__grid{
+        background-color: rgb(48, 78, 214);
+    }
+
+    .header__grid ul{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .grid__main{
+        background-color: rgb(138, 130, 143);
+    }
+     
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .header__grid{
+        background-color: coral;
+    }
+
+    .header__grid ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .grid__main{
+        background-color: bisque;
+    }
+
+    .grid__main{
+        display: grid;
+        grid-template-columns: 1fr 0.3fr 1fr;
+        grid-template-rows: 3fr 1fr 3fr;
+        grid-template-areas: 
+        "fotos4 fotos4 eslogan"
+        "fotos4 fotos4 eslogan"
+        "fotos6 fotos6 fotos6"
+        ;
+        
+    }
+
+    .fotos__4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parrafo_eslogan{
+        color:#02362a;
+        text-align: center;
+        
+    }
+
+    .fotos__6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
+    
+
+
+
+
