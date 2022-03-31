@@ -26,6 +26,18 @@
     
 }
 
+.foto_anillo{
+    transform: translate(3%, 3%);
+}
+
+.foto_anillo{
+    max-width: 15%;
+    transition: max-width 3s;
+}
+
+.foto_anillo:hover{
+    max-width: 20%;
+}
 
 .foto_anillo2{
     margin-top: 0px;
@@ -68,7 +80,7 @@ body{
 }
 
 main{
-    background-color: #e4e4e4;
+    background-image: linear-gradient(to right, rgb(12, 9, 9), rgb(60, 13, 13));
 }
 
 .imgbox{
