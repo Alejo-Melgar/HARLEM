@@ -113,9 +113,9 @@ main{
     margin-right: 30px;
     margin-bottom: 30px;
     margin-left: 400px;
-    padding: 20px;
-    max-width: 50%;
-    max-height: 0%;
+    padding: 6%;
+    max-width: 6%;
+    max-height: 6%;
     
 }
 
@@ -179,9 +179,9 @@ main{
     justify-content: center;
 }
 
-.flex__navegador li{
+.flex__navegador li a{
     display: inline-block;
-    color: rgb(163, 28, 28);
+    color: rgb(94, 13, 13);
     padding: 15px;
 }
 
