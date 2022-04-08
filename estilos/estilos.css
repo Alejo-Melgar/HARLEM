@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-*{
-    margin: 0,5%;
-    padding: 0,5%;
+* {
+    margin: 0, 5%;
+    padding: 0, 5%;
 }
 
-.titulo_principal{
+.titulo_principal {
     color: #202020;
     font-size: 400%;
-    text-align: center; 
-    
+    text-align: center;
+
 }
 
-.foto_anillo{
+.foto_anillo {
     margin-top: 2%;
     margin-right: 1%;
     margin-bottom: 2%;
@@ -23,23 +23,23 @@
     padding: 0.5%;
     max-width: 15%;
     max-height: 15%;
-    
+
 }
 
-.foto_anillo{
+.foto_anillo {
     transform: translate(3%, 3%);
 }
 
-.foto_anillo{
+.foto_anillo {
     max-width: 15%;
     transition: max-width 3s;
 }
 
-.foto_anillo:hover{
+.foto_anillo:hover {
     max-width: 20%;
 }
 
-.foto_anillospotify{
+.foto_anillospotify {
     margin-top: 8%;
     margin-right: 15%;
     margin-bottom: 1%;
@@ -54,7 +54,7 @@
 
 
 
-.foto_anillo0{
+.foto_anillo0 {
     margin-top: 5%;
     margin-right: 0%;
     margin-bottom: 5%;
@@ -64,7 +64,7 @@
     max-height: 0%;
 }
 
-.foto_anillo2{
+.foto_anillo2 {
     margin-top: 0px;
     margin-right: 1%;
     margin-bottom: 6%;
@@ -73,14 +73,15 @@
     max-width: 20%;
     max-height: 28%;
 }
-.parrafo_eslogan{
-    color:#202020;
+
+.parrafo_eslogan {
+    color: #202020;
     text-align: center;
     font-size: 200%;
-    
+
 }
 
-ul{
+ul {
     list-style-type: none;
     display: flex;
     margin-block-start: 1em;
@@ -88,27 +89,37 @@ ul{
     margin-inline-start: 3px;
     margin-inline-end: 3px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
 
-#italic{
+#italic {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+.header__grid {
+    background-color: rgb(249, 253, 251);
+}
+
+footer {
+    background-color: #e1d3b7;
+}
+
+body {
     background-color: #e4e4e4;
 }
 
-body{
+body {
     background-image: linear-gradient(to right, rgb(247, 245, 245), rgba(214, 211, 211, 0.018));
 }
 
-.imgbox{
+
+.imgbox {
     margin-top: 2px;
     margin-right: 2px;
     margin-bottom: 2px;
@@ -122,18 +133,18 @@ body{
 
 
 
-.parrafo_nosotros{
-    color:#000000;
+.parrafo_nosotros {
+    color: #000000;
     text-align: left;
-    
+
 }
 
-.contactos_sociales{
-    color:#000000;
+.contactos_sociales {
+    color: #000000;
     text-align: center;
 }
 
-.foto_anillo3{
+.foto_anillo3 {
     margin-top: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -141,12 +152,12 @@ body{
     padding: 6%;
     max-width: 6%;
     max-height: 6%;
-    
+
 }
 
 
-.grid__main{
-    display:  flex;
+.grid__main {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
@@ -156,14 +167,14 @@ body{
 
 }
 
-.fotos__4{
+.fotos__4 {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
 }
 
-.fotos__6{
+.fotos__6 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,23 +182,23 @@ body{
 }
 
 
-.header__grid{
+.header__grid {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 
 
-.imgbox{
+.imgbox {
     display: flex;
     align-items: center;
 
 }
 
-.titulo_principal{
+.titulo_principal {
     display: flex;
     flex-direction: column;
 }
@@ -201,81 +212,81 @@ body{
     margin-inline-end: 3px;
 }
 
-.flex__navegador ul{
+.flex__navegador ul {
     display: flex;
     justify-content: center;
 }
 
-.flex__navegador li a{
+.flex__navegador li a {
     display: inline-block;
     color: rgb(94, 13, 13);
     padding: 15px;
 }
 
 
-.grid{
-    display:grid;
+.grid {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.6fr 0.1fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"        
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
     ;
 }
 
-.header__grid{
+.header__grid {
     grid-area: header;
 }
 
-.grid__main{
+.grid__main {
     grid-area: main;
 }
 
-.footer__grid{
+.footer__grid {
     grid-area: footer;
 }
 
 
-.grid__main{
+.grid__main {
     display: grid;
     grid-template-columns: 1fr 0.3fr 1fr;
     grid-template-rows: 3fr 1fr 3fr;
-    grid-template-areas: 
-    "fotos4 fotos4 fotos4"
-    "eslogan eslogan eslogan"
-    "fotos6 fotos6 fotos6"
+    grid-template-areas:
+        "fotos4 fotos4 fotos4"
+        "eslogan eslogan eslogan"
+        "fotos6 fotos6 fotos6"
     ;
 
 }
 
-.fotos__4{
+.fotos__4 {
     grid-area: fotos4;
 }
 
-.parrafo_eslogan{
+.parrafo_eslogan {
     grid-area: eslogan;
 }
 
-.fotos__6{
+.fotos__6 {
     grid-area: fotos6;
 
 }
 
-.pulseras__main{
+.pulseras__main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0fr 0fr 1fr;
-    grid-template-areas: 
-    "pulseras pulseras pulseras pulseras"
-   /* "lista lista lista lista"*/
-    "spotify spotify spotify spotify"
-    "fotos fotos fotos fotos"
+    grid-template-areas:
+        "pulseras pulseras pulseras pulseras"
+        /* "lista lista lista lista"*/
+        "spotify spotify spotify spotify"
+        "fotos fotos fotos fotos"
     ;
 
 }
 
-.subtitulo_pulseras{
+.subtitulo_pulseras {
     grid-area: pulseras;
 }
 
@@ -284,15 +295,16 @@ body{
     grid-area: lista;
 }
 */
-.foto_anillospotify{
+.foto_anillospotify {
     grid-area: spotify;
 
 }
 
-.fotos__nav{
+.fotos__nav {
     grid-area: fotos;
 }
-.footer__grid{
+
+.footer__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 1fr 0fr;
@@ -303,28 +315,28 @@ body{
 
 }
 
-.parrafo_nosotros{
+.parrafo_nosotros {
     grid-area: pulseras;
 }
 
 
-.contactos_sociales{
+.contactos_sociales {
     grid-area: spotify;
 
 }
 
-.reservados__derechos{
+.reservados__derechos {
     grid-area: derechos;
 }
 
 
-.subtitulo_pulseras{
+.subtitulo_pulseras {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.foto_anillo{
+.foto_anillo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,74 +345,176 @@ body{
 
 
 @media screen and (max-width: 760px) {
-    .header__grid{
-        background-color: rgb(48, 78, 214);
+
+    .titulo_principal {
+        color: #202020;
+        font-size: 400%;
+        text-align: center;
+
     }
 
-    .header__grid ul{
+    .header__grid {
+        background-color: rgb(249, 253, 251);
+    }
+
+    .header__grid ul {
         flex-direction: row;
         align-items: flex-end;
     }
 
-    .grid__main{
-        background-color: rgb(138, 130, 143);
+    footer {
+        background-color: #e1d3b7;
     }
-     
+
+    /*
+    .grid__main{
+        background-color: rgb(232, 229, 233);
+    }
+    */
+    body {
+        background-color: #e4e4e4;
+    }
+
+    body {
+        background-image: linear-gradient(to right, rgb(247, 245, 245), rgba(214, 211, 211, 0.018));
+    }
+
+    .grid__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 4fr;
+        grid-template-areas:
+            "fotos4 fotos4 fotos4"
+            "eslogan eslogan eslogan"
+            "fotos6 fotos6 fotos6";
+
+    }
+
+    .fotos__4 .foto_anillo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .parrafo_eslogan {
+        color: #373737;
+        text-align: center;
+
+    }
+
+    .fotos__6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foto_anillo {
+        margin-top: 5%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        padding: 0%;
+        max-width: 31%;
+        max-height: 15%;
+    }
+
+    .foto_anillo0 {
+        margin-top: 1%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        padding: 1%;
+        max-width: 45%;
+    }
 }
 
 
 
 
 @media screen and (max-width: 500px) {
-    .header__grid{
-        background-color: coral;
+
+
+    .header__grid {
+        background-color: rgb(162, 160, 159);
     }
 
-    .header__grid ul{
+    .header__grid ul {
         flex-direction: column;
         align-items: flex-end;
     }
 
-    .grid__main{
-        background-color: bisque;
+
+    footer {
+        background-color: #898886;
     }
 
-    .grid__main{
+    body {
+        background-color: #e4e4e4;
+    }
+
+    body {
+        background-image: linear-gradient(to right, rgb(247, 245, 245), rgba(214, 211, 211, 0.018));
+    }
+
+    .grid__main {
         display: grid;
-        grid-template-columns: 1fr 0.3fr 1fr;
-        grid-template-rows: 3fr 1fr 3fr;
-        grid-template-areas: 
-        "fotos4 fotos4 eslogan"
-        "fotos4 fotos4 eslogan"
-        "fotos6 fotos6 fotos6"
+        grid-template-columns: 1fr 3.3fr 1fr;
+        grid-template-rows: 2fr 0fr 4fr;
+        grid-template-areas:
+            "fotos4 fotos4 fotos4"
+            "eslogan eslogan eslogan"
+            "fotos6 fotos6 fotos6"
         ;
-        
+
     }
 
-    .fotos__4{
+    .fotos__4 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .parrafo_eslogan{
-        color:#02362a;
+    .titulo_principal {
+        color: #f8fbfb;
         text-align: center;
-        
+        font-size: 200%;
+
     }
 
-    .fotos__6{
+    .parrafo_eslogan {
+        color: #2d2e2e;
+        text-align: center;
+
+    }
+
+    .fotos__6 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
+
+
+    .foto_anillo {
+        margin-top: 1%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        padding: 1%;
+        max-width: 45%;
+    }
+
+    .foto_anillo0 {
+        margin-top: 1%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        padding: 1%;
+        max-width: 45%;
+    }
+
 
 }
-    
-
-
-
-
