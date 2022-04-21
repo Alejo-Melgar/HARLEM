@@ -1,1 +1,37 @@
 $colorTitulo: #202020;
+
+
+$color: white;
+
+@each $color in blue,yellow,black {
+    .#{$color}{
+    color:#{$color};
+    }
+    
+}
+
+
+$redes: (
+        facebook: lightblue,
+        email: rgb(52, 68, 213),
+        whatsapp: rgb(36, 230, 36),
+        instagram:rgb(233, 44, 44)
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }    
+}
+
+
+@mixin flexbox ($flex, $direction, $justify){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+.parrafo_main{
+    @include flexbox(flex, row, center)
+}
+    
