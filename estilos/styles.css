@@ -1,3 +1,29 @@
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+.black {
+  color: black; }
+
+.btn--facebook {
+  background-color: lightblue; }
+
+.btn--email {
+  background-color: #3444d5; }
+
+.btn--whatsapp {
+  background-color: #24e624; }
+
+.btn--instagram {
+  background-color: #e92c2c; }
+
+.parrafo_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 * {
   margin: 0, 5%;
   padding: 0, 5%; }
@@ -100,7 +126,7 @@ footer {
   grid-template-rows: 3fr 1fr 0fr;
   grid-template-areas: "pulseras . spotify spotify" "pulseras . spotify spotify" "derechos derechos derechos derechos"; }
 
-.parrafo_nosotros {
+.parrafo_nosotros, .parrafo_especialnosotros {
   grid-area: pulseras; }
 
 .contactos_sociales {
@@ -109,10 +135,20 @@ footer {
 .reservados__derechos {
   grid-area: derechos; }
 
-.parrafo_nosotros {
+.parrafo_nosotros, .parrafo_especialnosotros {
   color: #000000;
   text-align: left; }
 
 .contactos_sociales {
-  color: #000000;
   text-align: center; }
+  .contactos_sociales ul {
+    display: flex;
+    justify-content: center; }
+  .contactos_sociales li a {
+    display: inline-block;
+    color: #292828;
+    padding: 15px; }
+
+.parrafo_especialnosotros {
+  border: 1% solid black;
+  color: #4d4c4c; }

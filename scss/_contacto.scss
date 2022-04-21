@@ -161,6 +161,23 @@ footer {
 }
 
 .contactos_sociales {
-    color: #000000;
     text-align: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li a {
+        display: inline-block;
+        color: rgb(41, 40, 40);
+        padding: 15px;
+    }
+
+}
+
+.parrafo_especialnosotros{
+    @extend .parrafo_nosotros;
+    border: 1% solid black;
+    color: rgb(77, 76, 76);
 }
