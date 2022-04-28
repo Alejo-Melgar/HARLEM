@@ -1,0 +1,54 @@
+.pulseras__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 1fr;
+    grid-template-areas:
+        "pulseras pulseras pulseras pulseras"
+        "spotify spotify spotify spotify"
+        "fotos fotos fotos fotos"
+    ;
+
+
+    .subtitulo_pulseras {
+        grid-area: pulseras;
+    }
+
+    .foto_anillospotify {
+        grid-area: spotify;
+
+    }
+
+    .fotos__nav {
+        grid-area: fotos;
+    }
+
+        .subtitulo_pulseras {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .foto_anillospotify {
+            margin-top: 8%;
+            margin-right: 15%;
+            margin-bottom: 1%;
+            margin-left: 15%;
+            padding: 0%;
+            max-width: 35%;
+            max-height: 48%;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+        }
+        
+            .foto_anillo2 {
+                margin-top: 0px;
+                margin-right: 1%;
+                margin-bottom: 6%;
+                margin-left: 3%;
+                padding: 1%;
+                max-width: 20%;
+                max-height: 28%;
+            }
+        
+}

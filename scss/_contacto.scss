@@ -10,10 +10,12 @@ body {
 body {
     background-image: linear-gradient(to right, rgb(247, 245, 245), rgba(214, 211, 211, 0.018));
 
-    #italic {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
 }
+
+#italic {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
 .grid {
     display: grid;
@@ -101,12 +103,12 @@ ul {
     ul {
         display: flex;
         justify-content: center;
-    }
 
-    li a {
-        display: inline-block;
-        color: rgb(94, 13, 13);
-        padding: 15px;
+        li a {
+            display: inline-block;
+            color: rgb(94, 13, 13);
+            padding: 15px;
+        }
     }
 
 
@@ -166,14 +168,13 @@ footer {
     ul {
         display: flex;
         justify-content: center;
-    }
 
-    li a {
-        display: inline-block;
-        color: rgb(41, 40, 40);
-        padding: 15px;
+        li a {
+            display: inline-block;
+            color: rgb(41, 40, 40);
+            padding: 15px;
+        }
     }
-
 }
 
 .parrafo_especialnosotros{

@@ -1,0 +1,85 @@
+@media screen and (max-width: 500px) {
+
+
+    .header__grid {
+        background-color: rgb(162, 160, 159);
+    }
+
+    .header__grid ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    footer {
+        background-color: #898886;
+    }
+
+    body {
+        background-color: #e4e4e4;
+    }
+
+    body {
+        background-image: linear-gradient(to right, rgb(247, 245, 245), rgba(214, 211, 211, 0.018));
+    }
+
+    .grid__main {
+        display: grid;
+        grid-template-columns: 1fr 3.3fr 1fr;
+        grid-template-rows: 2fr 0fr 4fr;
+        grid-template-areas:
+            "fotos4 fotos4 fotos4"
+            "eslogan eslogan eslogan"
+            "fotos6 fotos6 fotos6"
+        ;
+
+    }
+
+    .fotos__4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo_principal {
+        color: #f8fbfb;
+        text-align: center;
+        font-size: 200%;
+
+    }
+
+    .parrafo_eslogan {
+        color: #2d2e2e;
+        text-align: center;
+
+    }
+
+    .fotos__6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .foto_anillo {
+        margin-top: 1%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        padding: 1%;
+        max-width: 45%;
+    }
+
+    .foto_anillo0 {
+        margin-top: 1%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        padding: 1%;
+        max-width: 45%;
+    }
+
+
+}
