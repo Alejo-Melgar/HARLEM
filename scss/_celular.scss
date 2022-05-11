@@ -35,7 +35,9 @@
 
     }
 
+
     .fotos__4 {
+        grid-area: fotos4;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -50,12 +52,14 @@
     }
 
     .parrafo_eslogan {
+        grid-area: eslogan;
         color: #2d2e2e;
         text-align: center;
 
     }
 
     .fotos__6 {
+        grid-area: fotos6;
         display: flex;
         flex-direction: column;
         align-items: center;
