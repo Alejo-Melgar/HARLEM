@@ -4,10 +4,15 @@ const saludarProspectoNuevo = (nombre, apellido, edad) => {
 let nombreProspecto = prompt ("Ingresa tu nombre");
 let apellidoProspecto = prompt ("Ingresa tu apellido");
 let edadProspecto = prompt ("Ingresa tu edad");
+let localidadProspecto = prompt("Ingresa tu localidad");
+let calleProspecto = prompt("Ingresa tu calle y altura")
+
 
 const mensajeDeIdentidad = () => {
     alert("Comencemos, crea tu propio estilo.");
 }
+
+mensajeDeIdentidad ();
 
 saludarProspectoNuevo (nombreProspecto, apellidoProspecto, edadProspecto);
 
@@ -67,4 +72,57 @@ alert("Tu gasto total es de " + gastoTotal );
 alert(`Te quedan ${resto}.`);
 }
 
-mensajeDeIdentidad ();
+
+
+function datosDelProspecto (nombre, edad, localidad, calle) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.localidad = localidad;
+    this.calle = calle;
+}
+const prospecto1 = new datosDelProspecto (nombreProspecto, edadProspecto, localidadProspecto, calleProspecto);
+
+console.log(prospecto1);
+
+function productos (producto) {
+    this.producto = producto.nombre
+}
+
+const producto1 = new productos ({nombre : "Pulsera de oro"});
+const producto2 = new productos ({nombre : "Cadena de oro"});
+const producto3 = new productos ({nombre : "Anillo de oro"});
+const producto4 = new productos ({nombre : "Aros de oro"});
+const producto5 = new productos ({nombre : "Anillo de plata"});
+const producto6 = new productos ({nombre : "Collar de perlas"});
+const producto7 = new productos ({nombre : "Cadena rockstar"});
+
+
+console.log(producto1);
+console.log(producto2);
+console.log(producto3);
+console.log(producto4);
+console.log(producto5);
+console.log(producto6);
+console.log(producto7);
+
+
+const productosSeleccionados = [producto1, producto2, producto3, producto4, producto5];
+console.log(productosSeleccionados);
+
+
+const productosGuardadosEnFavoritos = [producto6, producto7];
+console.log(productosGuardadosEnFavoritos);
+
+const totalProductos = productosGuardadosEnFavoritos.concat(productosSeleccionados);
+console.log(totalProductos);
+
+for (const misProductos of totalProductos) {
+    console.log(`Tus productos son ${misProductos}`);
+
+}
+
+totalProductos.splice (3, 2);
+console.log(totalProductos);
+
+
+
