@@ -50,44 +50,24 @@
 
         <p class="parrafo_main"> Completar todos los espacios </p>
 
-        <img class="foto_anillo3" src="../multimedia/anillo.jpeg">
+        <img class="foto_anillo3" src="../multimedia/anillo12.jpeg">
 
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
+        <div id="contFormulario">
+            <form id="formulario" action="">
+                <input id="nombre" type="text" placeholder="nombre">
+                <input id="apellido" type="text" placeholder="apellido">
+                <input id="edad" type="number" placeholder="edad">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email"  id="exampleFormControlInput1" placeholder="name@example.com">
+                <input id="calleDomicilio" type="text" placeholder="calleDomicilio">
+                <input id="altura" type="number" placeholder="altura">
+                <input id="Localidad" type="text" placeholder="Localidad">
+                <input value="enviar" type="submit">
+            </form>
         </div>
 
-        <!-- BOTONES -->
-
-        <!-- boton para enviar-->
-
-        <input type="submit" value="Enviar Formulario">
-
-
-        <!-- boton para recetear -->
-
-        <input type="reset" value="Limpiar formulario">
-
-        <!-- boton no hace nada, sirve para javascript-->
-
-        <input type="button" value="sin acciones">
-
-
-
-
+        <div id="contenido"></div>
+        <button id="logOut">logOut</button>
         </form>
 
 
@@ -113,6 +93,8 @@
         </ul>
 
         <p class="reservados__derechos">Todos los derechos reservados</p>
+
+    
     </footer>
     
 
@@ -131,6 +113,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
 
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
